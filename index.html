@@ -3,42 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose Your Perfect Getaway</title>
+    <title>Pick Your Stay</title>
+    <link rel="icon" type="image/jpeg" href="assets/favicon.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="airbnb-brand">
-            <svg viewBox="0 0 32 32" class="airbnb-logo">
-                <path d="M16 1c2.008 0 3.463.963 4.751 3.269l.533 1.025c1.954 3.83 6.114 12.54 7.1 14.836l.145.353c.667 1.591.91 2.472.91 3.517 0 4.424-3.505 8-8.439 8-3.731 0-7.111-2.203-8.175-5.55L13 26c-.303-.842-.515-1.547-.515-2.5 0-.948.212-1.653.515-2.5l.277-.65c.98-2.295 5.162-11.058 7.1-14.836l.533-1.025C22.537 1.963 23.992 1 16 1zm0 2c-1.532 0-2.634.661-3.714 2.714l-.533 1.025c-1.94 3.776-6.114 12.54-7.1 14.836l-.145.353C4.171 23.134 4 23.715 4 24.5c0 3.584 2.916 6.5 6.5 6.5 2.946 0 5.704-1.748 6.574-4.422l.175-.578c.252-.833.428-1.477.428-2.5 0-1.023-.176-1.667-.428-2.5l-.271-.65c-.98-2.295-5.162-11.058-7.1-14.836L9.714 4.714C8.634 2.661 7.532 2 6 2z" fill="currentColor"></path>
-            </svg>
-            <span>Luxury Villas</span>
-        </div>
-    </header>
 
     <main>
-        <h1 class="welcome-text">Choose Your Perfect Getaway</h1>
+        <h1 class="welcome-text">Pick Your Stay</h1>
         
         <div class="villas-container">
             <div class="villa-card">
                 <div class="villa-image-container">
-                    <img src="assets/mrudgandha.png" alt="Mrudgandha Pool Villa" class="villa-image">
+                    <img src="assets/mrudgandha.png" alt="Mrudgandha Pool Villa" class="villa-image" onclick="window.open('https://mrudgandha.helloyaatri.com', '_blank')">
                 </div>
-                <h2>Mrudgandha Pool Villa</h2>
-                <p class="location">Mulshi, Pune</p>
-                <button class="cta-button">View Mrudgandha</button>
+                <div class="villa-details">
+                    <div class="villa-header">
+                        <h2 onclick="window.open('https://mrudgandha.helloyaatri.com', '_blank')">Mrudgandha Pool Villa</h2>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>4.67</span>
+                        </div>
+                    </div>
+                    <p class="location">Mulshi - 40 km from Pune and 97 km from Panvel, Mumbai</p>
+                    <div class="price-social">
+                        <a href="https://www.instagram.com/mrudgandh_poolvilla/" target="_blank" class="instagram-link">
+                            <img src="assets/ig.png" alt="Instagram" class="instagram-icon">
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="villa-card">
                 <div class="villa-image-container">
-                    <img src="assets/banyan.png" alt="Banyan Tree Pool Villa" class="villa-image">
+                    <img src="assets/banyan.png" alt="Banyan Tree Pool Villa" class="villa-image" onclick="window.open('https://banyantree.helloyaatri.com', '_blank')">
                 </div>
-                <h2>Banyan Tree Pool Villa</h2>
-                <p class="location">Palghar, Maharashtra</p>
-                <button class="cta-button">View Banyan Tree</button>
+                <div class="villa-details">
+                    <div class="villa-header">
+                        <h2 onclick="window.open('https://banyantree.helloyaatri.com', '_blank')">Banyan Tree Pool Villa (Shivom Organic Farms)</h2>
+                        <div class="rating">
+                            <span class="star">★</span>
+                            <span>4.8</span>
+                        </div>
+                    </div>
+                    <p class="location">Palghar, Maharashtra - 2.5 hour drive from Mumbai</p>
+                    <div class="price-social">
+                        <a href="https://www.instagram.com/shivomorganicfarm/" target="_blank" class="instagram-link">
+                            <img src="assets/ig.png" alt="Instagram" class="instagram-icon">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
