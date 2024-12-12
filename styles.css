@@ -74,8 +74,8 @@ body {
 }
 
 .villa-image-container:hover {
-    box-shadow: 0 0 20px rgba(255, 90, 95, 0.3),
-                0 0 60px rgba(255, 90, 95, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 60px rgba(255, 255, 255, 0.1);
 }
 
 .villa-image {
