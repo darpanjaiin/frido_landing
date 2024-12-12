@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #FF5A5F;
+    --text-color: #484848;
+    --background-color: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition-timing: 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--background-color);
+}
+
+.header {
+    padding: 1.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.airbnb-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.airbnb-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 3rem 0;
+    font-weight: 600;
+}
+
+.villas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.villa-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 12px;
+    transition: transform var(--transition-timing);
+}
+
+.villa-card:hover {
+    transform: translateY(-5px);
+}
+
+.villa-image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 66.67%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.villa-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-timing);
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.villa-card:hover .villa-image {
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.location {
+    color: #717171;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color var(--transition-timing);
+}
+
+.cta-button:hover {
+    background-color: #ff4146;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    color: #717171;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 2rem;
+        padding: 0 1rem;
+    }
+
+    .villas-container {
+        padding: 0 1rem;
+    }
+} 
